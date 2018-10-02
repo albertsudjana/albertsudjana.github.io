@@ -199,6 +199,9 @@ html,h1,h2,h3,h4,h5,h6,a{
  border-bottom-left-radius: 0;
 }
 
+.row{
+  padding-left: 70px 
+}
 
 .polaroid {
   border-radius: 8px;
