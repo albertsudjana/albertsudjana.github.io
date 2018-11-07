@@ -34,6 +34,9 @@ html,h1,h2,h3,h4,h5,h6,a{
 .navbar-collapse{ justify-content: flex-end;}
 .navbar-toggler{  background:#fff !important;}
 
+transition: all 0.4s ease;
+}
+
 @keyframes slideInFromLeft {
   0% {
   opacity: 0;
@@ -150,6 +153,9 @@ html,h1,h2,h3,h4,h5,h6,a{
  color:#4484CE;
  margin: 2em; 
 }
+.portfolio h5{
+ color:#4484CE;
+}
 .portfolio img{
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -186,6 +192,14 @@ html,h1,h2,h3,h4,h5,h6,a{
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.img-modal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 150px;
+    max-width: 300px;
+    margin-top: 25px;
+}
 
 .item:hover .des{
  height: 15rem;

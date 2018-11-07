@@ -25,7 +25,7 @@
     <div class="overlay"></div>
             <div class="container">
             <div class="typewriter">
-          <h1>    Hello World, I'm Albert!</h1>  
+          <h1> Hello World, I'm Albert!</h1>  
           </div> 
           <div class="description">
           <button class="btn btn-outline-secondary btn-lg" id = "seeMore">Push Me</button> </div>
@@ -43,7 +43,7 @@
      
     <h3>Albert Sudjana</h3>
     <p>
-       Hi, I'm a senior at UC Berkeley currently pursuing a bachelor's degree in Electrical Engineering and Computer Science.
+       Hi, I'm a senior at UC Berkeley currently pursuing a bachelor's degree in Electrical Engineering and Computer Science. I have a special interest in developing web apps that aim to make day-to-day processes much more easier.
     </p>
    </div>
   </div>
@@ -53,7 +53,7 @@
     <!-- navbar -->  
 
  <nav class="navbar navbar-expand-lg fixed-top ">  
- <a class="navbar-brand" href="#"> Home </a>
+ <!--<a class="navbar-brand" href="" id = "goTop"> Home </a>-->
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
  <span class="navbar-toggler-icon"></span>
 </button>
@@ -61,59 +61,131 @@
  <li class="nav-item">
      <a class="nav-link" data-value="about" href="#">About</a>        
      </li>  
-<!--<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>    
- </li>-->
+  </li>
  <li class="nav-item"> 
-    <a class="nav-link " data-value="resume" href="images/Resume 3.0.pdf">Resume</a>         
+    <a class="nav-link " data-value="resume" href="images/Resume.pdf">Resume</a>         
     </li>    
   <li class="nav-item"> 
     <a class="nav-link " data-value="links" href="#">Links</a>         
     </li>    
 </ul> 
 </div></nav>
-<!-- portfolio 
+
 <div class="portfolio" id="portfolio">
-     
+
+<!-- Modals -->
+<div class="modal fade" id="modalPayPay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">PayPay</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <img src="images/PayPay.jpg" class="img-modal">
+      <div class="modal-body">
+      PayPay aims to solve the unnecessary use of voucher tickets in events by providing an in-app menu and payment platform for consumers to use. PayPay also provides a an automated QR generators to consumers for vendors to verify the specific order and set whether the order has been claimed or not. Claimed orders act as a safety for vendors as consumers will not be able to use the same QR code twice as it will be rendered invalid once the vendor has clicked the claim button. 
+      <br>
+      <br>
+      Built using:
+      <br>
+      Front-end: HTML, CSS, Javascript
+      <br>
+      Back-End: Python
+      <br>
+      Database: MongoDB
+      <br>
+      Frameworks: Flask
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/gantonius/PayPay" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View Source Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalShoes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Shoe Store</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <img src="images/shoes.jpg" class="img-modal">
+      <div class="modal-body">
+      Where Are My Shoes? is a C++ interactive shoe store which includes buying from a customer's perspective and selling from a vendor's perspective. It has a functionalities which includes maintaining stock, track shipping and keep customer transaction information for easier purchase. Uses binary search tree to store shoes data and hash tables to store customer data. 
+      <br>
+      <br>
+      Built using:
+      <br>
+      Back-End: C++
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/albertsudjana/WhereAreMyShoes" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View Source Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Eat Today</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <img src="images/eat.jpg" class="img-modal">
+      <div class="modal-body">
+      Eat Today is a Node.js restaurant generator that picks a restaurant based on ZIP code input. It uses the YELP fusion API to locate restaurants.
+      <br>
+      <br>
+      Built using:
+      <br>
+      Back-End: Javascript
+      <br>
+      Framework: Node.js
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/albertsudjana/random-restaurant" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View Source Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Portfolio Display -->    
  <div class="container">
     <h1 class="text-center">Portfolio</h1>
   <div class="row">
    <div class="col-lg-4 col-md-4 col-sm-12 item">
       <div class = "polaroid">
-        <img src="images/me.jpg" class="img-fluid">
-      <div class="des"><a class="nav-link " data-value="links" href="#">Bear Maps</a> </div>
+        <img src="images/PayPay.jpg" class="img-fluid">
+        <div class="des"><a class="nav-link " data-toggle="modal" data-target="#modalPayPay">PayPay</a></div>
     </div> 
     </a>
   </div>
    <div class="col-lg-4 col-md-4 col-sm-12 item">
-   <div class = "polaroid">
-   <div class="des"><a class="test" data-value="links" href="https://google.com">Bear Maps</a>  </div>
-   </div></div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="images/portfolio/port6.png" class="img-fluid">
-   </div>
-<div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="images/portfolio/port3.png" class="img-fluid">
-   </div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="images/portfolio/port11.png" class="img-fluid">
-   </div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="images/portfolio/electric.png" class="img-fluid">
-   </div>
-<div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="images/portfolio/Classic.jpg" class="img-fluid">
-   </div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="images/portfolio/port1.png" class="img-fluid">
-   </div>
-   <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="images/portfolio/port8.png" class="img-fluid">
-   </div>
+      <div class = "polaroid">
+        <img src="images/shoes.jpg" class="img-fluid">
+        <div class="des"><a class="nav-link " data-toggle="modal" data-target="#modalShoes">Where Are My Shoes?</a></div>
+      </div>
+    </div>
+   <div class="col-lg-4 col-md-4 col-sm-12 item">
+      <div class = "polaroid">
+        <img src="images/eat.jpg" class="img-fluid">
+        <div class="des"><a class="nav-link " data-toggle="modal" data-target="#modalEat">Eat Today</a></div>
+      </div>
+    </div>
   </div>
  </div>
 </div>
--->
+
+
 
 <div class="links" id="links">
      
@@ -134,7 +206,7 @@
           </a>
 </div>
    <div class="col-lg-4 col-md-4 col-sm-12">
-      <a href="images/Resume 3.0.pdf">
+      <a href="images/Resume.pdf">
           <i class="fa fa-file"></i>
            </a>
    </div>

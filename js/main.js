@@ -13,3 +13,9 @@ $("#seeMore").click(function(){
    scrollTop:$("#" + "about").offset().top
   },1000)
   })
+
+$("#goTop").click(function(){
+  $("body,html").animate({
+   scrollTop:$("#" + $(this).data("home")).offset().top
+  },1000)
+  })
